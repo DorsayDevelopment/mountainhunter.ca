@@ -2,6 +2,9 @@
 @import url("css/normalize.css");
 @import url("vendor/bootstrap/css/sandstone-bootstrap.min.css");
 @import url("vendor/font-awesome/css/font-awesome.min.css");
+/* Small devices (tablets, 768px and up) */
+/* Medium devices (desktops, 992px and up) */
+/* Large devices (large desktops, 1200px and up) */
 html, body {
   background: #E2E2E2; }
 
@@ -28,5 +31,17 @@ html, body {
 
 .navbar {
   border-radius: 0; }
+
+#social-bar-outside-collapsed {
+  display: inline; }
+  @media (min-width: 768px) {
+    #social-bar-outside-collapsed {
+      display: none; } }
+
+#social-bar-inside-collapsed {
+  display: none; }
+  @media (min-width: 768px) {
+    #social-bar-inside-collapsed {
+      display: block; } }
 
 /*# sourceMappingURL=style.css.map */
