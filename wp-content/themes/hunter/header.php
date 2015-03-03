@@ -39,7 +39,13 @@
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="navbar-collapse-version">
-            <?php wp_nav_menu( array( 'theme_location' => 'header-menu', 'menu_class' => 'nav navbar-nav navbar-left' ) ); ?>
+            <?php wp_nav_menu( array( 'theme_location' => 'header-menu', 'menu_class' => 'nav navbar-nav' ) ); ?>
+            <ul class="nav navbar-nav navbar-right social-icons">
+                <li><a href=""><i class="fa fa-facebook-official"></i></a></li>
+                <li><a href=""><i class="fa fa-twitter-square"></i></a></li>
+                <li><a href=""><i class="fa fa-pinterest-square"></i></a></li>
+                <li><a href=""><i class="fa fa-instagram"></i></a></li>
+            </ul>
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
 </nav>

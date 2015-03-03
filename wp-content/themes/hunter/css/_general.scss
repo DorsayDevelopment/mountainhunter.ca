@@ -4,13 +4,18 @@
 //@import url('vendor/bootstrap/css/bootstrap-theme.min.css');
 
 $header-color-main: #232323;
+$body-color-main: #E2E2E2;
+$main-accent-color: #c77506;
+
+html, body {
+  background: $body-color-main;
+}
 
 #site-logo-area {
   background: $header-color-main;
 }
 
 .navbar .nav>li>a {
-  line-height: 20px;
   font-size: 15pt;
   -webkit-transition: color 0.5s;
   -moz-transition: color 0.5s;
@@ -20,7 +25,12 @@ $header-color-main: #232323;
 }
 
 .navbar .nav>li>a:hover {
-  color: orange;
+  color: $main-accent-color;
+}
+
+.social-icons>li>a {
+  color: white;
+  font-size: 15pt;
 }
 
 #site-logo {
