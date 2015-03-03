@@ -1,5 +1,26 @@
 /* Partials */
 @import url("css/normalize.css");
 @import url("vendor/bootstrap/css/sandstone-bootstrap.min.css");
+@import url("vendor/font-awesome/css/font-awesome.min.css");
+#site-logo-area {
+  background: #232323; }
+
+.navbar .nav > li > a {
+  line-height: 20px;
+  font-size: 15pt;
+  -webkit-transition: color 0.5s;
+  -moz-transition: color 0.5s;
+  -ms-transition: color 0.5s;
+  -o-transition: color 0.5s;
+  transition: color 0.5s; }
+
+.navbar .nav > li > a:hover {
+  color: orange; }
+
+#site-logo {
+  height: 200px; }
+
+.navbar {
+  border-radius: 0; }
 
 /*# sourceMappingURL=style.css.map */

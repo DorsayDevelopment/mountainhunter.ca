@@ -16,22 +16,30 @@
     <?php wp_head(); ?>
 </head>
 <body>
+
 <nav class="navbar navbar-default">
+    <div class="container-fluid" id="site-logo-area">
+        <div class="container">
+            <a class="home-link col-md-2" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+                <img id="site-logo" src="<?php bloginfo('template_directory')?>/img/MHS.png" alt="" class=""/>
+                <!--            <h1 class="site-title">--><?php //bloginfo( 'name' ); ?><!--</h1>-->
+            </a>
+        </div>
+    </div>
     <div class="container">
-        <!-- Brand and toggle get grouped for better mobile display -->
+        <!-- Collapsed version -->
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-version">
+                <span class="sr-only"></span>
+                <?php for($i = 0; $i < 3; $i++) { ?>
+                    <span class="icon-bar"></span>
+                <?php } ?>
             </button>
-            <a class="brand" href="<?php echo site_url(); ?>"><?php bloginfo('name'); ?></a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <?php wp_nav_menu( array( 'theme_location' => 'header-menu', 'menu_class' => 'nav navbar-nav navbar-right' ) ); ?>
+        <div class="collapse navbar-collapse" id="navbar-collapse-version">
+            <?php wp_nav_menu( array( 'theme_location' => 'header-menu', 'menu_class' => 'nav navbar-nav navbar-left' ) ); ?>
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
 </nav>
