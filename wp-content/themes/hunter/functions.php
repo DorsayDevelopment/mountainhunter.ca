@@ -14,3 +14,22 @@ function hunter_scripts()
     wp_enqueue_script( 'bootstrap' );
 }
 add_action( 'wp_enqueue_scripts', 'hunter_scripts' );
+
+function register_my_menu() {
+    register_nav_menu('header-menu',__( 'Header Menu' ));
+}
+add_action( 'init', 'register_my_menu' );
+
+if (function_exists('register_sidebar')) {
+
+    register_sidebar(array(
+        'name' => 'Widgetized Area',
+        'id'   => 'widgetized-area',
+        'description'   => 'This is a widgetized area.',
+        'before_widget' => '<div id="%1$s" class="widget %2$s">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h4>',
+        'after_title'   => '</h4>'
+    ));
+
+}

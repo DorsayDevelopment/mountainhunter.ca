@@ -10,7 +10,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Mountain Hunter Society</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title><?php wp_title('|',1,'right'); ?> <?php bloginfo('name'); ?></title>
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>"/>
     <?php wp_head(); ?>
 </head>
@@ -25,14 +26,12 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">Brand</a>
+            <a class="brand" href="<?php echo site_url(); ?>"><?php bloginfo('name'); ?></a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right">
-                <?php wp_list_pages(array('title_li' => '')); ?>
-            </ul>
+            <?php wp_nav_menu( array( 'theme_location' => 'header-menu', 'menu_class' => 'nav navbar-nav navbar-right' ) ); ?>
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
 </nav>
