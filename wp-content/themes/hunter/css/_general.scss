@@ -3,6 +3,7 @@
 @import url('vendor/font-awesome/css/font-awesome.min.css');
 //@import url('vendor/bootstrap/css/bootstrap-theme.min.css');
 @import "mixins";
+@import "header";
 
 $header-color-main: #232323;
 $body-color-main: #E2E2E2;
@@ -12,46 +13,3 @@ html, body {
   background: $body-color-main;
 }
 
-#site-logo-area {
-  background: $header-color-main;
-}
-
-.navbar .nav>li>a {
-  font-size: 15pt;
-  -webkit-transition: color 0.5s;
-  -moz-transition: color 0.5s;
-  -ms-transition: color 0.5s;
-  -o-transition: color 0.5s;
-  transition: color 0.5s;
-}
-
-.navbar .nav>li>a:hover {
-  color: $main-accent-color;
-}
-
-.social-icons>li>a {
-  color: white;
-  font-size: 15pt;
-}
-
-#site-logo {
-  height: 200px;
-}
-
-.navbar {
-  border-radius: 0;
-}
-
-#social-bar-outside-collapsed {
-  display: inline;
-  @include vpw-sm {
-    display: none;
-  }
-}
-
-#social-bar-inside-collapsed {
-  display: none;
-  @include vpw-sm {
-    display: block;
-  }
-}

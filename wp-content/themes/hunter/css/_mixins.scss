@@ -4,7 +4,7 @@ $screen-lg-min: 1200px;
 
 /* Small devices (tablets, 768px and up) */
 @mixin vpw-sm {
-  @media (min-width: $screen-sm-min) {
+  @media (max-width: $screen-sm-min) {
     @content;
   }
 }
