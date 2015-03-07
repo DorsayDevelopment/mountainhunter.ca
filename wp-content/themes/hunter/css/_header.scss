@@ -3,6 +3,8 @@
 $header-color-main: #232323;
 $body-color-main: #E2E2E2;
 $main-accent-color: #c77506;
+$light-grey: #9A9A9A;
+$dark-grey: #3a3a3a;
 
 #site-logo-area {
   background: url(img/mountain-bg.png) center top;
@@ -13,6 +15,7 @@ $main-accent-color: #c77506;
 
 .navbar .nav>li>a {
   font-size: 15pt;
+  color: $light-grey;
   -webkit-transition: color 0.5s;
   -moz-transition: color 0.5s;
   -ms-transition: color 0.5s;
@@ -22,6 +25,10 @@ $main-accent-color: #c77506;
 
 .navbar .nav>li>a:hover {
   color: $main-accent-color;
+}
+
+.navbar {
+  background: $dark-grey;
 }
 
 .social-icons>li>a {

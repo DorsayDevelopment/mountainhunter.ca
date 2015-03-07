@@ -16,6 +16,7 @@
 
 .navbar .nav > li > a {
   font-size: 15pt;
+  color: #9A9A9A;
   -webkit-transition: color 0.5s;
   -moz-transition: color 0.5s;
   -ms-transition: color 0.5s;
@@ -24,6 +25,9 @@
 
 .navbar .nav > li > a:hover {
   color: #c77506; }
+
+.navbar {
+  background: #3a3a3a; }
 
 .social-icons > li > a {
   color: white;
