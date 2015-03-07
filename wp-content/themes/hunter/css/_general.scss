@@ -1,7 +1,6 @@
 @import url('css/normalize.css');
 @import url('vendor/bootstrap/css/sandstone-bootstrap.min.css');
 @import url('vendor/font-awesome/css/font-awesome.min.css');
-//@import url('vendor/bootstrap/css/bootstrap-theme.min.css');
 @import "mixins";
 @import "header";
 @import "../vendor/hover-effects/hover-effects";
@@ -9,8 +8,34 @@
 $header-color-main: #232323;
 $body-color-main: #E2E2E2;
 $main-accent-color: #c77506;
+$light-grey: #9A9A9A;
 
 html, body {
   background: $body-color-main;
 }
 
+.teaser {
+  margin-bottom: 20px;
+}
+
+.home-products {
+  a {
+
+    img {
+      width: 100%;
+      height: inherit;
+    }
+  }
+  p {
+    margin-top: 10px;
+  }
+}
+
+.headline {
+  font-size: 25pt;
+  color: $light-grey;
+  border-bottom: 3px $light-grey solid;
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}

@@ -31,6 +31,9 @@ $main-accent-color: #c77506;
 
 #site-logo {
   height: 200px;
+  @include vpw-sm {
+    height: 150px;
+  }
 }
 
 .navbar {
