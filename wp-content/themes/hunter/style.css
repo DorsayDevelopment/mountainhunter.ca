@@ -9,7 +9,7 @@
 /* Medium devices (desktops, 992px and up) */
 /* Large devices (large desktops, 1200px and up) */
 #site-logo-area {
-  background: #232323; }
+  background: url(img/mountain-bg.png) center top; }
   @media (max-width: 768px) {
     #site-logo-area {
       text-align: center; } }
@@ -30,7 +30,7 @@
   font-size: 15pt; }
 
 #site-logo {
-  height: 200px; }
+  height: 300px; }
   @media (max-width: 768px) {
     #site-logo {
       height: 150px; } }
@@ -39,10 +39,10 @@
   border-radius: 0; }
 
 #social-bar-inside-collapsed {
-  display: none; }
+  display: block; }
   @media (max-width: 768px) {
     #social-bar-inside-collapsed {
-      display: block; } }
+      display: none; } }
 
 .hover-effect figure img {
   display: block;

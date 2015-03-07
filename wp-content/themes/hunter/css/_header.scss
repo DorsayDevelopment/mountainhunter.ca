@@ -5,7 +5,7 @@ $body-color-main: #E2E2E2;
 $main-accent-color: #c77506;
 
 #site-logo-area {
-  background: $header-color-main;
+  background: url(img/mountain-bg.png) center top;
   @include vpw-sm {
     text-align: center;
   }
@@ -30,7 +30,7 @@ $main-accent-color: #c77506;
 }
 
 #site-logo {
-  height: 200px;
+  height: 300px;
   @include vpw-sm {
     height: 150px;
   }
@@ -41,8 +41,8 @@ $main-accent-color: #c77506;
 }
 
 #social-bar-inside-collapsed {
-  display: none;
+  display: block;
   @include vpw-sm {
-    display: block;
+    display: none;
   }
 }
