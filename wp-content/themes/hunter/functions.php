@@ -20,6 +20,8 @@ add_action( 'wp_enqueue_scripts', 'hunter_scripts' );
 function register_menus() {
     register_nav_menu('header-main-menu',__( 'Header Main Menu' ));
     register_nav_menu('header-secondary-menu',__( 'Header Secondary Menu' ));
+    register_nav_menu('footer-nav-menu',__( 'Footer Navigation Menu' ));
+    register_nav_menu('footer-store-menu',__( 'Footer Store Menu' ));
 }
 add_action( 'init', 'register_menus' );
 

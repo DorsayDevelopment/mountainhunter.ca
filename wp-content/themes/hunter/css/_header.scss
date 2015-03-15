@@ -1,10 +1,5 @@
 @import "mixins";
-
-$header-color-main: #232323;
-$body-color-main: #E2E2E2;
-$main-accent-color: #c77506;
-$light-grey: #9A9A9A;
-$dark-grey: #3a3a3a;
+@import "variables";
 
 #site-logo-area {
   background: url(img/mountain-bg.png) center top;
@@ -14,7 +9,7 @@ $dark-grey: #3a3a3a;
 }
 
 .navbar .nav>li>a {
-  font-size: 15pt;
+  font-size: $medium-font;
   color: $light-grey;
   -webkit-transition: color 0.5s;
   -moz-transition: color 0.5s;
@@ -33,7 +28,7 @@ $dark-grey: #3a3a3a;
 
 .social-icons>li>a {
   color: white;
-  font-size: 15pt;
+  font-size: $medium-font;
 }
 
 #site-logo {

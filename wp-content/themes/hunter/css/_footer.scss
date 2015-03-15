@@ -1,0 +1,34 @@
+@import "variables";
+
+// Sticky footer
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: $footer-size;
+
+  color: $light-grey;
+  .footer-headline {
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-size: $medium-font;
+  }
+
+  .footer-image {
+    max-width: 100%;
+  }
+
+  .footer-body {
+    padding: 15px 0;
+  }
+}
+
+.footer-menu {
+  list-style: none;
+  padding-left: 5px;
+  font-size: $small-font;
+  a {
+    color: $light-grey;
+  }
+}
