@@ -17,7 +17,7 @@
             <img src="<?php bloginfo('template_directory'); echo '/' ?>img/forest-24.jpg" alt="coffee cup"/>
             <figcaption>
                 <h2>New <span>Products</span></h2>
-                <p>The latest and greatest from Mountain Hunter Society</p>
+                <p>The latest and greatest from MHS</p>
                 <a href="#">View more</a>
             </figcaption>
         </figure>

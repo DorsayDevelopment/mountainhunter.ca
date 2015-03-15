@@ -8,8 +8,8 @@
   width: 100%;
   /* Set the fixed height of the footer here */
   height: $footer-size;
-
   color: $light-grey;
+
   .footer-headline {
     margin-top: 20px;
     text-transform: uppercase;
@@ -26,10 +26,9 @@
 
   .footer-copy {
     padding-top: 10px;
-  }
-
-  @include vpw-sm {
-
+    a {
+      color: $light-grey;
+    }
   }
 }
 
