@@ -17,6 +17,15 @@
 </head>
 <body>
 
+
+<!--Experimental splash screen-->
+<div class="container-fluid">
+    <div id="splash-screen" class="hidden">
+        Splash screen content
+    </div>
+</div>
+
+
 <nav class="navbar navbar-default">
     <div class="container-fluid" id="site-logo-area">
         <div class="container">
