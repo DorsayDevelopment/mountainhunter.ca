@@ -18,7 +18,7 @@
             <figcaption>
                 <h2>New <span>Products</span></h2>
                 <p>The latest and greatest from MHS</p>
-                <a href="#">View more</a>
+                <a href="<?php echo esc_url( home_url( 'shop/?orderby=date' ) ); ?>"></a>
             </figcaption>
         </figure>
     </div>
@@ -28,7 +28,7 @@
             <figcaption>
                 <h2>Join <span>MHS</span></h2>
                 <p>Become a member of the Society</p>
-                <a href="#">View more</a>
+                <a href="#"></a>
             </figcaption>
         </figure>
     </div>
@@ -38,14 +38,14 @@
             <figcaption>
                 <h2>About <span>Us</span></h2>
                 <p>Get to know the MHS crew.</p>
-                <a href="#">View more</a>
+                <a href="<?php echo esc_url( home_url( 'about' ) ); ?>"></a>
             </figcaption>
         </figure>
     </div>
 
 
     <div class="headline col-md-12">
-        Popular Products
+        Featured Products
     </div>
 
     <?php

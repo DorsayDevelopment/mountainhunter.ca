@@ -7,7 +7,7 @@
 /**
  * Imports
  */
-@import "bourbon";
+@import "bourbon/_bourbon";
 @import "mixins";
 @import "variables";
 @import "fonts";
@@ -229,6 +229,15 @@ div.pp_woocommerce {
 
 	.pp_inline {
 		padding: 0!important;
+	}
+}
+
+// RTL support
+.rtl {
+	div.pp_woocommerce {
+		.pp_content_container {
+			text-align: right;
+		}
 	}
 }
 

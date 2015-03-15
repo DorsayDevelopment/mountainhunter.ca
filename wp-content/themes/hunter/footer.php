@@ -22,7 +22,7 @@
                 <?php wp_nav_menu( array( 'theme_location' => 'footer-store-menu', 'menu_class' => 'footer-menu' ) ); ?>
             </div>
             <div class="col-md-2 col-md-offset-4">
-                <a href="/"><img src="<?php bloginfo('template_directory') ?>/img/MHS.png" alt="" id="footer-image" class="img-responsive center-block"/></a>
+                <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php bloginfo('template_directory') ?>/img/MHS.png" alt="" id="footer-image" class="img-responsive center-block"/></a>
             </div>
         </div>
         <div class="row text-center footer-copy">
