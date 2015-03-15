@@ -26,6 +26,14 @@ body {
   margin-bottom: 20px;
 }
 
+a {
+  color: $light-grey;
+}
+
+a:hover {
+  color: $main-accent-color;
+}
+
 .home-products {
   a {
 

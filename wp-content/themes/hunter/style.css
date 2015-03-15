@@ -1995,6 +1995,12 @@ body {
 .teaser {
   margin-bottom: 20px; }
 
+a {
+  color: #9A9A9A; }
+
+a:hover {
+  color: #c77506; }
+
 .home-products a img {
   width: 100%;
   height: inherit; }
