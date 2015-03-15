@@ -24,7 +24,7 @@
                 <img src="<?php bloginfo('template_directory') ?>/img/MHS.png" alt="" id="footer-image" class="img-responsive"/>
             </div>
         </div>
-        <div class="row text-center">
+        <div class="row text-center footer-copy">
             <p>
                 &copy; 2015 Mountain Hunter Society | <a href="http://brycendorsay.com">Dorsay Development</a>
             </p>

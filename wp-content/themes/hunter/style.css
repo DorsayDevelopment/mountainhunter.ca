@@ -63,6 +63,8 @@
     max-width: 100%; }
   .footer .footer-body {
     padding: 15px 0; }
+  .footer .footer-copy {
+    padding-top: 10px; }
 
 .footer-menu {
   list-style: none;
