@@ -60,6 +60,10 @@ a:hover {
   border-bottom: 3px $light-grey solid;
 }
 
+.woocommerce-breadcrumb {
+  display: none;
+}
+
 /////////////////////////////////
 /////////// Products ////////////
 /////////////////////////////////
@@ -67,9 +71,14 @@ a:hover {
 .products {
   list-style-type: none;
   padding: 0;
+  margin-top: 10px;
 
   img {
     width: 100%;
     height: inherit;
+  }
+
+  li {
+    margin-bottom: 10px;
   }
 }
