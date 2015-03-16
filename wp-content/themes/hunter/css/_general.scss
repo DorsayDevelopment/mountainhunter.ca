@@ -128,7 +128,8 @@ a:hover {
     }
 
     li a:hover {
-      background-color: $light-grey;
+      background-color: $lighter-grey;
+      text-decoration: none;
     }
   }
 
@@ -138,3 +139,6 @@ a:hover {
   }
 }
 
+#place_order {
+  background-color: $main-accent-color;
+}

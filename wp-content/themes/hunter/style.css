@@ -42,6 +42,9 @@
     #site-logo-area {
       text-align: center; } }
 
+.collapse {
+  padding-left: 0; }
+
 #menu-header-main-menu {
   margin-bottom: 0; }
 
@@ -2137,9 +2140,13 @@ a:hover {
     .sidebar ul li a img {
       height: inherit; }
   .sidebar ul li a:hover {
-    background-color: #9A9A9A; }
+    background-color: #c6c6c6;
+    text-decoration: none; }
 .sidebar .post-date {
   font-size: 12pt;
   color: #9A9A9A; }
+
+#place_order {
+  background-color: #c77506; }
 
 /*# sourceMappingURL=style.css.map */
