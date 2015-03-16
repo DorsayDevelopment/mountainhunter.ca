@@ -49,8 +49,8 @@
     </div>
 
     <?php
-    $args = array( 'post_type' => 'product');
-    $loop = new WP_Query( $args );
+    $args = array( 'post_type' => 'product', 'product_cat' => 'featured', 'numberposts' => 4);
+    $loop = new WP_Query($args);
     while ( $loop->have_posts() ) : $loop->the_post(); ?>
 
         <div class="col-md-3 col-sm-12 home-products">
