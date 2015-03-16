@@ -2,12 +2,40 @@
 @import url("css/normalize.css");
 @import url("vendor/bootstrap/css/sandstone-bootstrap.min.css");
 @import url("vendor/font-awesome/css/font-awesome.min.css");
+.transition-bg-color, .navbar .nav > li > a, .footer-menu a, .sidebar-list li a {
+  -webkit-transition: background-color 0.5s;
+  -moz-transition: background-color 0.5s;
+  -ms-transition: background-color 0.5s;
+  -o-transition: background-color 0.5s;
+  transition: background-color 0.5s; }
+
+.transition-color {
+  -webkit-transition: color 0.5s;
+  -moz-transition: color 0.5s;
+  -ms-transition: color 0.5s;
+  -o-transition: color 0.5s;
+  transition: color 0.5s; }
+
 /* Small devices (tablets, 768px and up) */
 /* Medium devices (desktops, 992px and up) */
 /* Large devices (large desktops, 1200px and up) */
 /* Small devices (tablets, 768px and up) */
 /* Medium devices (desktops, 992px and up) */
 /* Large devices (large desktops, 1200px and up) */
+.transition-bg-color, .navbar .nav > li > a, .footer-menu a, .sidebar-list li a {
+  -webkit-transition: background-color 0.5s;
+  -moz-transition: background-color 0.5s;
+  -ms-transition: background-color 0.5s;
+  -o-transition: background-color 0.5s;
+  transition: background-color 0.5s; }
+
+.transition-color {
+  -webkit-transition: color 0.5s;
+  -moz-transition: color 0.5s;
+  -ms-transition: color 0.5s;
+  -o-transition: color 0.5s;
+  transition: color 0.5s; }
+
 #site-logo-area {
   background: url(img/mountain-bg.png) center top; }
   @media (max-width: 768px) {
@@ -16,12 +44,7 @@
 
 .navbar .nav > li > a {
   font-size: 15pt;
-  color: #9A9A9A;
-  -webkit-transition: color 0.5s, background-color 0.5s;
-  -moz-transition: color 0.5s, background-color 0.5s;
-  -ms-transition: color 0.5s, background-color 0.5s;
-  -o-transition: color 0.5s, background-color 0.5s;
-  transition: color 0.5s, background-color 0.5s; }
+  color: #9A9A9A; }
 
 .navbar .nav > li > a:hover {
   color: #9A9A9A;
@@ -48,6 +71,20 @@
   @media (max-width: 768px) {
     #social-bar-inside-collapsed {
       display: none; } }
+
+.transition-bg-color, .navbar .nav > li > a, .footer-menu a, .sidebar-list li a {
+  -webkit-transition: background-color 0.5s;
+  -moz-transition: background-color 0.5s;
+  -ms-transition: background-color 0.5s;
+  -o-transition: background-color 0.5s;
+  transition: background-color 0.5s; }
+
+.transition-color {
+  -webkit-transition: color 0.5s;
+  -moz-transition: color 0.5s;
+  -ms-transition: color 0.5s;
+  -o-transition: color 0.5s;
+  transition: color 0.5s; }
 
 /* Small devices (tablets, 768px and up) */
 /* Medium devices (desktops, 992px and up) */
@@ -83,12 +120,7 @@
     padding-left: 10px; }
   .footer-menu a {
     color: #9A9A9A;
-    border-radius: 3px;
-    -webkit-transition: color 0.5s, background-color 0.5s;
-    -moz-transition: color 0.5s, background-color 0.5s;
-    -ms-transition: color 0.5s, background-color 0.5s;
-    -o-transition: color 0.5s, background-color 0.5s;
-    transition: color 0.5s, background-color 0.5s; }
+    border-radius: 3px; }
   .footer-menu a:hover {
     background-color: #262626; }
 
@@ -2065,8 +2097,15 @@ a:hover {
   text-align: left;
   padding-left: 0;
   list-style-type: none; }
+  .sidebar-list li a {
+    display: block;
+    width: 100%;
+    padding: 5px 0; }
+  .sidebar-list li a:hover {
+    background-color: #3a3a3a; }
 
 .post-date {
-  font-size: 12pt; }
+  font-size: 12pt;
+  color: #9A9A9A; }
 
 /*# sourceMappingURL=style.css.map */

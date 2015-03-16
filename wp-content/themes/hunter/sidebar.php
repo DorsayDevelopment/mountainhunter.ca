@@ -16,7 +16,7 @@
             foreach($recent_posts as $post) {
                 echo '<li class="h3">';
                 echo '<a class="col-md-12" href="' . get_permalink($post["ID"]) . '">' . $post["post_title"];
-                ?><p class="col-md-12 post-date text-right"><?php the_time('l, F jS, Y') ?></p><?php
+                ?><em class="col-md-12 post-date text-right"><?php the_time('l, F jS, Y') ?></em><?php
                 echo '</a></li>';
 
             }

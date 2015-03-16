@@ -112,8 +112,18 @@ a:hover {
   padding-left: 0;
   list-style-type: none;
 
+  li a {
+    display: block;
+    width: 100%;
+    padding: 5px 0;
+    @extend .transition-bg-color;
+  }
 
+  li a:hover {
+    background-color: $dark-grey;
+  }
 }
 .post-date {
   font-size: $small-font;
+  color: $light-grey;
 }

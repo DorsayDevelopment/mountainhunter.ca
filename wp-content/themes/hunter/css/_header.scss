@@ -11,11 +11,7 @@
 .navbar .nav>li>a {
   font-size: $medium-font;
   color: $light-grey;
-  -webkit-transition: color 0.5s, background-color 0.5s;
-  -moz-transition: color 0.5s, background-color 0.5s;
-  -ms-transition: color 0.5s, background-color 0.5s;
-  -o-transition: color 0.5s, background-color 0.5s;
-  transition: color 0.5s, background-color 0.5s;
+  @extend .transition-bg-color;
 
 }
 
