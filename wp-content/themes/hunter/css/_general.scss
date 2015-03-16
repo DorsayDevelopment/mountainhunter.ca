@@ -104,26 +104,37 @@ a:hover {
 /////////////////////////////////
 
 .sidebar {
+  .h3 {
+    margin-top: 0;
+  }
+  .headline-2 {
+    margin-bottom: 0;
+  }
+  ul {
+    text-align: left;
+    padding-left: 0;
+    list-style-type: none;
 
-}
+    li a {
+      display: block;
+      width: 100%;
+      padding: 5px 0;
+      @extend .transition-bg-color;
+      border-radius: 3px;
 
-.sidebar-list {
-  text-align: left;
-  padding-left: 0;
-  list-style-type: none;
+      img {
+        height: inherit;
+      }
+    }
 
-  li a {
-    display: block;
-    width: 100%;
-    padding: 5px 0;
-    @extend .transition-bg-color;
+    li a:hover {
+      background-color: $light-grey;
+    }
   }
 
-  li a:hover {
-    background-color: $dark-grey;
+  .post-date {
+    font-size: $small-font;
+    color: $light-grey;
   }
 }
-.post-date {
-  font-size: $small-font;
-  color: $light-grey;
-}
+
