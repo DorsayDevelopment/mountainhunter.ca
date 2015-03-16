@@ -2,14 +2,14 @@
 @import url("css/normalize.css");
 @import url("vendor/bootstrap/css/sandstone-bootstrap.min.css");
 @import url("vendor/font-awesome/css/font-awesome.min.css");
-.transition-bg-color, .navbar .nav > li > a, .footer-menu a, .sidebar ul li a {
+.transition-bg-color, #menu-header-main-menu > li > a, #menu-header-secondary-menu-1 > li > a, #social-bar-inside-collapsed > li > a, .footer-menu a, .sidebar ul li a {
   -webkit-transition: background-color 0.5s;
   -moz-transition: background-color 0.5s;
   -ms-transition: background-color 0.5s;
   -o-transition: background-color 0.5s;
   transition: background-color 0.5s; }
 
-.transition-color {
+.transition-color, #menu-header-secondary-menu > li > a {
   -webkit-transition: color 0.5s;
   -moz-transition: color 0.5s;
   -ms-transition: color 0.5s;
@@ -22,14 +22,14 @@
 /* Small devices (tablets, 768px and up) */
 /* Medium devices (desktops, 992px and up) */
 /* Large devices (large desktops, 1200px and up) */
-.transition-bg-color, .navbar .nav > li > a, .footer-menu a, .sidebar ul li a {
+.transition-bg-color, #menu-header-main-menu > li > a, #menu-header-secondary-menu-1 > li > a, #social-bar-inside-collapsed > li > a, .footer-menu a, .sidebar ul li a {
   -webkit-transition: background-color 0.5s;
   -moz-transition: background-color 0.5s;
   -ms-transition: background-color 0.5s;
   -o-transition: background-color 0.5s;
   transition: background-color 0.5s; }
 
-.transition-color {
+.transition-color, #menu-header-secondary-menu > li > a {
   -webkit-transition: color 0.5s;
   -moz-transition: color 0.5s;
   -ms-transition: color 0.5s;
@@ -42,11 +42,39 @@
     #site-logo-area {
       text-align: center; } }
 
-.navbar .nav > li > a {
+#menu-header-main-menu {
+  margin-bottom: 0; }
+
+#menu-header-main-menu > li > a {
   font-size: 15pt;
   color: #9A9A9A; }
 
-.navbar .nav > li > a:hover {
+#menu-header-main-menu > li > a:hover {
+  color: #9A9A9A;
+  background-color: #262626; }
+
+#menu-header-secondary-menu > li > a {
+  font-size: 15pt;
+  line-height: 0;
+  color: #3a3a3a; }
+
+#menu-header-secondary-menu > li > a:hover {
+  color: #c77506; }
+
+#menu-header-secondary-menu-1 {
+  margin-top: 0; }
+
+#menu-header-secondary-menu-1 > li > a {
+  font-size: 15pt; }
+
+#menu-header-secondary-menu-1 > li > a:hover {
+  background-color: #262626; }
+
+#social-bar-inside-collapsed > li > a {
+  font-size: 15pt;
+  color: #9A9A9A; }
+
+#social-bar-inside-collapsed > li > a:hover {
   color: #9A9A9A;
   background-color: #262626; }
 
@@ -72,14 +100,14 @@
     #social-bar-inside-collapsed {
       display: none; } }
 
-.transition-bg-color, .navbar .nav > li > a, .footer-menu a, .sidebar ul li a {
+.transition-bg-color, #menu-header-main-menu > li > a, #menu-header-secondary-menu-1 > li > a, #social-bar-inside-collapsed > li > a, .footer-menu a, .sidebar ul li a {
   -webkit-transition: background-color 0.5s;
   -moz-transition: background-color 0.5s;
   -ms-transition: background-color 0.5s;
   -o-transition: background-color 0.5s;
   transition: background-color 0.5s; }
 
-.transition-color {
+.transition-color, #menu-header-secondary-menu > li > a {
   -webkit-transition: color 0.5s;
   -moz-transition: color 0.5s;
   -ms-transition: color 0.5s;

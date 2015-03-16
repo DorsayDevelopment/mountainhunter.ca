@@ -19,8 +19,8 @@
 
 
 <!--Experimental splash screen-->
-<div class="container-fluid">
-    <div id="splash-screen" class="hidden">
+<div class="container-fluid hidden">
+    <div id="splash-screen">
         Splash screen content
     </div>
 </div>
@@ -41,10 +41,10 @@
         </div>
     </div>
     <div class="container">
-        <!-- Collapsed version -->
+
         <div class="navbar-header">
 
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-version">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
                 <span class="sr-only"></span>
                 <?php for($i = 0; $i < 3; $i++) { ?>
                     <span class="icon-bar"></span>
@@ -53,8 +53,10 @@
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="navbar-collapse-version">
+        <div class="collapse navbar-collapse" id="navbar-collapse">
             <?php wp_nav_menu( array( 'theme_location' => 'header-main-menu', 'menu_class' => 'nav navbar-nav' ) ); ?>
+            <?php wp_nav_menu( array( 'theme_location' => 'header-secondary-menu', 'menu_class' => 'nav navbar-nav hidden-md hidden-lg' ) ); ?>
+
             <ul id="social-bar-inside-collapsed" class="nav navbar-nav navbar-right social-icons">
                 <li><a href=""><i class="fa fa-facebook-official"></i></a></li>
                 <li><a href=""><i class="fa fa-twitter-square"></i></a></li>
