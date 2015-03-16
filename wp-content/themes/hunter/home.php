@@ -10,7 +10,7 @@
 <?php get_header(); ?>
 
 <div class="container">
-    <div class="headline row">
+    <div class="headline-1 row">
         The Blog
     </div>
     <div class="row">

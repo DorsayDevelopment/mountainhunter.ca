@@ -17,7 +17,7 @@ get_header( 'shop' ); ?>
 
 <div class="container">
 
-    <div class="headline row">
+    <div class="headline-1 row">
         The Shop
     </div>
 

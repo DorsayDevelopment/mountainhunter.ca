@@ -21,7 +21,7 @@
   }
 
   .footer-body {
-    padding: 15px 0;
+//    padding: 15px 0;
   }
 
   .footer-copy {
@@ -39,15 +39,25 @@
   list-style: none;
   font-size: $small-font;
   padding: 0;
-  margin-left: 10px;
-
   li a {
     line-height: 30px;
-    width: 200px;
+    display: block;
+    width: 100%;
+    padding-left: 10px;
   }
 
   a {
     color: $light-grey;
+    border-radius: 3px;
+    -webkit-transition: color 0.5s, background-color 0.5s;
+    -moz-transition: color 0.5s, background-color 0.5s;
+    -ms-transition: color 0.5s, background-color 0.5s;
+    -o-transition: color 0.5s, background-color 0.5s;
+    transition: color 0.5s, background-color 0.5s;
+  }
+
+  a:hover {
+    background-color: $darker-grey;
   }
 }
 

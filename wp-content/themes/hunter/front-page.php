@@ -44,7 +44,7 @@
     </div>
 
 
-    <div class="headline col-md-12">
+    <div class="headline-1 col-md-12">
         Featured Products
     </div>
 

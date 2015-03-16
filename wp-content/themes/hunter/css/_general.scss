@@ -48,12 +48,28 @@ a:hover {
 }
 
 .headline {
-  font-size: $large-font;
   color: $dark-grey;
   border-bottom: 3px $dark-grey solid;
   text-align: center;
   margin-bottom: 20px;
   text-transform: uppercase;
+}
+
+.headline-1 {
+  @extend .headline;
+  font-size: $large-font;
+}
+
+.headline-2 {
+  @extend .headline;
+  font-size: $medium-font;
+
+}
+
+.headline-3 {
+  @extend .headline;
+  font-size: $small-font;
+
 }
 
 .underline {
@@ -81,4 +97,23 @@ a:hover {
   li {
     margin-bottom: 10px;
   }
+}
+
+/////////////////////////////////
+/////////// Sidebar ////////////
+/////////////////////////////////
+
+.sidebar {
+
+}
+
+.sidebar-list {
+  text-align: left;
+  padding-left: 0;
+  list-style-type: none;
+
+
+}
+.post-date {
+  font-size: $small-font;
 }
