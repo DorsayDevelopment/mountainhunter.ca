@@ -42,9 +42,6 @@
     #site-logo-area {
       text-align: center; } }
 
-.collapse {
-  padding-left: 0; }
-
 #menu-header-main-menu {
   margin-bottom: 0; }
 
@@ -2067,7 +2064,8 @@
   transition-delay: 0.2s; }
 
 html, body {
-  background: #3a3a3a; }
+  background: #3a3a3a;
+  overflow-x: hidden; }
 
 html {
   position: relative; }
