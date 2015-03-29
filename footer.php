@@ -46,7 +46,7 @@
             </p>
             <?php wp_nav_menu( array( 'theme_location' => 'footer-store-menu', 'menu_class' => 'footer-menu' ) ); ?>
         </div>
-        <div class="row text-center footer-copy">
+        <div class="col-md-12 text-center footer-copy">
             <p>
                 &copy; 2015 Mountain Hunter Society | <a href="http://brycendorsay.com">Dorsay Development</a>
             </p>
