@@ -73,12 +73,30 @@ a:hover {
 
 }
 
+form {
+  margin-bottom: 10px;
+}
+
 .underline {
   border-bottom: 3px $light-grey solid;
 }
 
 .woocommerce-breadcrumb {
   display: none;
+}
+
+.images>a>img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+}
+
+.products {
+  display: inline;
+
+  >li>a>img {
+    max-width: 300px;
+  }
 }
 
 /////////////////////////////////

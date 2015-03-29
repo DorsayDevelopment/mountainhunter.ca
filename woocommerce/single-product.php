@@ -34,9 +34,11 @@ get_header( 'shop' ); ?>
 		do_action( 'woocommerce_after_main_content' );
 	?>
 
+    <div class="col-md-3">
 	<?php
 		do_action( 'woocommerce_sidebar' );
 	?>
+    </div>
 </div>
 
 <?php get_footer( 'shop' ); ?>

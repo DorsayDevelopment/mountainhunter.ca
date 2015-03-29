@@ -2,14 +2,14 @@
 @import url("css/normalize.css");
 @import url("vendor/bootstrap/css/sandstone-bootstrap.min.css");
 @import url("vendor/font-awesome/css/font-awesome.min.css");
-.transition-bg-color, #menu-header-main-menu > li > a, #menu-header-secondary-menu-1 > li > a, #social-bar-inside-collapsed > li > a, .footer-menu a, .sidebar ul li a {
+.transition-bg-color, #menu-header-main-menu > li > a, #menu-header-secondary-menu > li > a, #menu-header-secondary-menu-1 > li > a, #social-bar-inside-collapsed > li > a, .footer-menu a, .sidebar ul li a {
   -webkit-transition: background-color 0.5s;
   -moz-transition: background-color 0.5s;
   -ms-transition: background-color 0.5s;
   -o-transition: background-color 0.5s;
   transition: background-color 0.5s; }
 
-.transition-color, #menu-header-secondary-menu > li > a {
+.transition-color {
   -webkit-transition: color 0.5s;
   -moz-transition: color 0.5s;
   -ms-transition: color 0.5s;
@@ -22,14 +22,14 @@
 /* Small devices (tablets, 768px and up) */
 /* Medium devices (desktops, 992px and up) */
 /* Large devices (large desktops, 1200px and up) */
-.transition-bg-color, #menu-header-main-menu > li > a, #menu-header-secondary-menu-1 > li > a, #social-bar-inside-collapsed > li > a, .footer-menu a, .sidebar ul li a {
+.transition-bg-color, #menu-header-main-menu > li > a, #menu-header-secondary-menu > li > a, #menu-header-secondary-menu-1 > li > a, #social-bar-inside-collapsed > li > a, .footer-menu a, .sidebar ul li a {
   -webkit-transition: background-color 0.5s;
   -moz-transition: background-color 0.5s;
   -ms-transition: background-color 0.5s;
   -o-transition: background-color 0.5s;
   transition: background-color 0.5s; }
 
-.transition-color, #menu-header-secondary-menu > li > a {
+.transition-color {
   -webkit-transition: color 0.5s;
   -moz-transition: color 0.5s;
   -ms-transition: color 0.5s;
@@ -56,10 +56,16 @@
 #menu-header-secondary-menu > li > a {
   font-size: 15pt;
   line-height: 0;
-  color: #3a3a3a; }
+  color: #9A9A9A;
+  width: 100%;
+  display: block; }
+
+#menu-header-secondary-menu > li {
+  width: 100%;
+  background-color: #1c1c1c; }
 
 #menu-header-secondary-menu > li > a:hover {
-  color: #c77506; }
+  background-color: #262626; }
 
 #menu-header-secondary-menu-1 {
   margin-top: 0; }
@@ -79,7 +85,7 @@
   background-color: #262626; }
 
 .navbar {
-  background: #3a3a3a; }
+  background: #1c1c1c; }
 
 .social-icons > li > a {
   color: white;
@@ -100,14 +106,14 @@
     #social-bar-inside-collapsed {
       display: none; } }
 
-.transition-bg-color, #menu-header-main-menu > li > a, #menu-header-secondary-menu-1 > li > a, #social-bar-inside-collapsed > li > a, .footer-menu a, .sidebar ul li a {
+.transition-bg-color, #menu-header-main-menu > li > a, #menu-header-secondary-menu > li > a, #menu-header-secondary-menu-1 > li > a, #social-bar-inside-collapsed > li > a, .footer-menu a, .sidebar ul li a {
   -webkit-transition: background-color 0.5s;
   -moz-transition: background-color 0.5s;
   -ms-transition: background-color 0.5s;
   -o-transition: background-color 0.5s;
   transition: background-color 0.5s; }
 
-.transition-color, #menu-header-secondary-menu > li > a {
+.transition-color {
   -webkit-transition: color 0.5s;
   -moz-transition: color 0.5s;
   -ms-transition: color 0.5s;
@@ -300,7 +306,7 @@
     transition: transform 0.35s;
     -webkit-transform: translate3d(0, -20px, 0);
     transform: translate3d(0, -20px, 0);
-    padding-top: 30%; }
+    padding-top: 20%; }
   .hover-effect figure.effect-bubba p {
     -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
     -moz-transition: opacity 0.35s, -moz-transform 0.35s;
@@ -2064,7 +2070,7 @@
   transition-delay: 0.2s; }
 
 html, body {
-  background: #3a3a3a;
+  background: #1c1c1c;
   overflow-x: hidden; }
 
 html {
@@ -2073,13 +2079,13 @@ html {
 body {
   margin-bottom: 205px;
   font-size: 12pt;
-  background: #E2E2E2; }
+  background: #fcfcfc; }
 
 .teaser {
   margin-bottom: 20px; }
 
 a {
-  color: #3a3a3a; }
+  color: #1c1c1c; }
 
 a:hover {
   color: #c77506; }
@@ -2091,8 +2097,8 @@ a:hover {
   margin-top: 10px; }
 
 .headline, .headline-1, .headline-2, .headline-3 {
-  color: #3a3a3a;
-  border-bottom: 3px #3a3a3a solid;
+  color: #1c1c1c;
+  border-bottom: 3px #1c1c1c solid;
   text-align: center;
   margin-bottom: 20px;
   text-transform: uppercase; }
@@ -2106,11 +2112,24 @@ a:hover {
 .headline-3 {
   font-size: 12pt; }
 
+form {
+  margin-bottom: 10px; }
+
 .underline {
   border-bottom: 3px #9A9A9A solid; }
 
 .woocommerce-breadcrumb {
   display: none; }
+
+.images > a > img {
+  width: 100%;
+  max-width: 500px;
+  height: auto; }
+
+.products {
+  display: inline; }
+  .products > li > a > img {
+    max-width: 300px; }
 
 .products {
   list-style-type: none;

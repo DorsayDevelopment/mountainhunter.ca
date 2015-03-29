@@ -12,7 +12,7 @@
         <div class="row underline footer-headline">
             <div class="col-md-3">Navigation</div>
             <div class="col-md-3">Store</div>
-            <div class="col-md-3 col-md-offset-3 text-right">MountainHunter.com</div>
+            <div class="col-md-3 col-md-offset-3 text-right">MountainHunter.ca</div>
         </div>
         <div class="row footer-body underline">
             <div class="col-md-3">

@@ -28,7 +28,7 @@
             <figcaption>
                 <h2>Join <span>MHS</span></h2>
                 <p>Become a member of the Society</p>
-                <a href="#"></a>
+                <a href="<?php echo esc_url( home_url( 'my-account' ) ); ?>"></a>
             </figcaption>
         </figure>
     </div>

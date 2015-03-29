@@ -27,12 +27,19 @@
 #menu-header-secondary-menu>li>a {
   font-size: $medium-font;
   line-height: 0;
-  color: $dark-grey;
-  @extend .transition-color;
+  color: $light-grey;
+  width: 100%;
+  display: block;
+  @extend .transition-bg-color;
+}
+
+#menu-header-secondary-menu>li {
+  width: 100%;
+  background-color: $dark-grey;
 }
 
 #menu-header-secondary-menu>li>a:hover {
-  color: $main-accent-color;
+  background-color: $darker-grey;
 }
 
 #menu-header-secondary-menu-1 {

@@ -32,7 +32,7 @@
             <div class="col-md-10 col-sm-12">
                 <a class="home-link" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
                     <img id="site-logo" src="<?php bloginfo('template_directory')?>/img/MHS.png" alt="" class=""/>
-                    <!--            <h1 class="site-title">--><?php //bloginfo( 'name' ); ?><!--</h1>-->
+                    <!--            <h1 class="site-title">--><?php //Site description if needed //bloginfo( 'name' ); ?><!--</h1>-->
                 </a>
             </div>
             <div class="col-md-2 hidden-sm hidden-xs">

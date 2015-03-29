@@ -43,7 +43,7 @@
     @include transition(transform $hover-effect-bubba-speed);
     @include translate3d(0, -20px, 0);
 
-    padding-top: 30%;
+    padding-top: 20%;
   }
 
   p {
