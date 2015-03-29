@@ -1,0 +1,31 @@
+$header-color-main: #232323;
+$body-color-main: #fcfcfc;
+$main-accent-color: #c77506;
+$light-grey: #9A9A9A;
+$lighter-grey: #c6c6c6;
+$dark-grey: #1c1c1c;
+$darker-grey: #262626;
+
+$footer-size: 205px;
+
+$large-font: 25pt;
+$medium-font: 15pt;
+$small-font: 12pt;
+
+// Global parent classes
+
+.transition-bg-color {
+  -webkit-transition: background-color 0.5s;
+  -moz-transition: background-color 0.5s;
+  -ms-transition: background-color 0.5s;
+  -o-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+}
+
+.transition-color {
+  -webkit-transition: color 0.5s;
+  -moz-transition: color 0.5s;
+  -ms-transition: color 0.5s;
+  -o-transition: color 0.5s;
+  transition: color 0.5s;
+}
