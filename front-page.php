@@ -66,6 +66,37 @@
 
     <?php endwhile; wp_reset_query(); ?>
 
+    <div class="headline-1 col-md-12">
+        Recent Posts
+    </div>
+
+    <?php
+    $args = array(
+        'post_type' => 'post',
+        'post_status' => 'draft, publish, future, pending, private',
+        'numberposts' => 4,
+        'orderby' => 'post_date',
+        'order' => 'DESC');
+
+    $loop = new WP_Query($args);
+    while ( $loop->have_posts() ) : $loop->the_post(); ?>
+
+    <div class="col-md-3 col-sm-12 home-products">
+        <a href="<?php echo get_permalink( $loop->post->ID ) ?>">
+            <?php
+            if(has_post_thumbnail()) {
+                the_post_thumbnail();
+            } else { ?>
+                <img src="<?php bloginfo('template_directory') ?>/img/MHS.jpg" alt=""/>
+            <?php } ?>
+            <p><?php the_title(); ?></p>
+
+        </a>
+    </div>
+
+    <?php endwhile; wp_reset_query(); ?>
+
+
 </div>
 
 <?php get_footer(); ?>
