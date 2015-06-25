@@ -58,10 +58,10 @@
             <?php wp_nav_menu( array( 'theme_location' => 'header-secondary-menu', 'menu_class' => 'nav navbar-nav hidden-md hidden-lg' ) ); ?>
 
             <ul id="social-bar-inside-collapsed" class="nav navbar-nav navbar-right social-icons">
-                <li><a href=""><i class="fa fa-facebook-official"></i></a></li>
-                <li><a href=""><i class="fa fa-twitter-square"></i></a></li>
-                <li><a href=""><i class="fa fa-pinterest-square"></i></a></li>
-                <li><a href=""><i class="fa fa-instagram"></i></a></li>
+<!--                <li><a href=""><i class="fa fa-facebook-official"></i></a></li>-->
+                <li><a href="https://twitter.com/mtnhuntsociety"><i class="fa fa-twitter-square"></i></a></li>
+<!--                <li><a href=""><i class="fa fa-pinterest-square"></i></a></li>-->
+                <li><a href="https://instagram.com/mountainhuntersociety/"><i class="fa fa-instagram"></i></a></li>
             </ul>
         </div><!-- /.navbar-collapse -->
 
