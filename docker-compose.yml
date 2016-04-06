@@ -1,0 +1,23 @@
+version: "2"
+
+services:
+  web:
+    build: .
+    links:
+      - db:mysql
+    ports:
+      - 9080:80
+    environment:
+      - WORDPRESS_DB_HOST=db
+      - WORDPRESS_DB_PASSWORD=Dorsay13
+  db:
+    image: mysql
+    volumes:
+      - mysql-db:/data/mountainhunter_db
+    environment:
+      - MYSQL_ROOT_PASSWORD=Dorsay13
+      - MYSQL_DATABASE=wordpress
+
+volumes:
+  mysql-db:
+    driver: local
