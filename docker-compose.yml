@@ -16,7 +16,7 @@ services:
       - mysql-db:/data/mountainhunter
     environment:
       - MYSQL_ROOT_PASSWORD=mtnhunter1
-      - MYSQL_DATABASE=wordpress
+      - MYSQL_DATABASE=mountainhunter
 
 volumes:
   mysql-db:
