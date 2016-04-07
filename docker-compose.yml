@@ -14,7 +14,7 @@ services:
   db:
     image: mysql
     volumes:
-      - mysql-db:/data/mountainhunter
+      - mysql-db:/var/lib/mysql
     environment:
       - MYSQL_ROOT_PASSWORD=mtnhunter1
       - MYSQL_DATABASE=mountainhunter
