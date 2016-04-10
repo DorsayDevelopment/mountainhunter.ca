@@ -2,11 +2,13 @@ version: "2"
 
 services:
   web:
-    image: dorsaydevelopment/mountainhunter.ca
+    image: dorsaydevelopment/mountainhunter.ca:latest
     links:
-      - db:mysql
+      - db
     ports:
       - 80:80
+    volumes:
+      - mysql-db:/data/mountainhunter
     environment:
       - WORDPRESS_DB_HOST=db
       - WORDPRESS_DB_PASSWORD=mtnhunter1
@@ -20,5 +22,4 @@ services:
       - MYSQL_DATABASE=mountainhunter
 
 volumes:
-  mysql-db:
-    driver: local
+  mysql-db: {}
