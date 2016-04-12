@@ -1,17 +1,16 @@
 <?php
-function hunter_scripts()
+function mountainhunter_scripts()
 {
   wp_register_script( 'actions', get_template_directory_uri() . '/js/main.js', array(), false, true);
   wp_enqueue_script( 'actions' );
+  wp_enqueue_style('font-awesome', get_template_directory_uri() . '/vendor/font-awesome/css/font-awesome.min.css');
+  wp_enqueue_style('roboto-font', 'https://fonts.googleapis.com/css?family=Roboto:400,300,500', false);
 }
-add_action( 'wp_enqueue_scripts', 'hunter_scripts' );
+add_action( 'wp_enqueue_scripts', 'mountainhunter_scripts' );
 
 
 function register_menus() {
   register_nav_menu('header-main-menu',__( 'Header Main Menu' ));
-  register_nav_menu('header-secondary-menu',__( 'Header Secondary Menu' ));
-  register_nav_menu('footer-nav-menu',__( 'Footer Navigation Menu' ));
-  register_nav_menu('footer-store-menu',__( 'Footer Store Menu' ));
 }
 add_action( 'init', 'register_menus' );
 

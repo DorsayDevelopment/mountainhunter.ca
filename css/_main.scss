@@ -1,1 +1,19 @@
 @import "variables";
+
+body {
+  background: $main-color-1;
+}
+
+html {
+  font-family: 'Roboto', sans-serif;
+
+}
+
+#headliner {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+}
