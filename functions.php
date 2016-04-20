@@ -2,9 +2,19 @@
 function mountainhunter_scripts()
 {
   wp_register_script( 'actions', get_template_directory_uri() . '/js/main.js', array(), false, true);
+  wp_register_script( 'jquery', 'https://code.jquery.com/jquery-2.2.3.min.js', array(), false, true);
+  wp_register_script( 'materialize-js', 'https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js', array(), false, true);
   wp_enqueue_script( 'actions' );
+  wp_enqueue_script( 'jquery' );
+  wp_enqueue_script( 'materialize-js' );
+
+  
+  wp_enqueue_style('reset', get_template_directory_uri() . '/css/reset.css');
   wp_enqueue_style('font-awesome', get_template_directory_uri() . '/vendor/font-awesome/css/font-awesome.min.css');
+  wp_enqueue_style('materialize-css', 'https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css');
+  wp_enqueue_style('materialize-css-icons', 'https://fonts.googleapis.com/icon?family=Material+Icons');
   wp_enqueue_style('roboto-font', 'https://fonts.googleapis.com/css?family=Roboto:400,300,500', false);
+  wp_enqueue_style('main-css', get_template_directory_uri() . '/style.css', false);
 }
 add_action( 'wp_enqueue_scripts', 'mountainhunter_scripts' );
 

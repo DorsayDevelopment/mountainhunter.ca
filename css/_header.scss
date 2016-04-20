@@ -1,47 +1,30 @@
 @import "variables";
 @import "mixins";
 
-#main-nav ul {
-  background: black;
-  padding: 20px 50px;
+nav {
+  background-color: $header-color;
+  padding: 0 50px;
   @include small-down {
-    padding: 20px 10px;
+    padding: 0 10px;
   }
-  color: $main-text-color;
-  list-style-type: none;
-  font-size: $header-font-size;
-
-  li {
-    display: inline;
-    padding: 0 5px;
-
-    a {
-      color: $main-text-color;
-      text-decoration: none;
-    }
-  }
-
-  .blog-title a {
+  .blog-title {
+    font-size: $header-font-size;
     text-transform: uppercase;
-    &:visited {
-      color: $main-text-color;
-    }
-  }
-
-  .full-title {
     @include small-down {
-      display: none;
+      font-size: $header-font-size - 7pt;
     }
   }
-
-  .short-title {
-    @include medium-up {
-      display: none;
+  .button-collapse {
+    margin-right: 10px;
+    i {
+      @include small-down {
+        font-size: $header-font-size + 2pt;
+      }
     }
-  }
 
-  .nav-right {
-    float: right;
   }
 }
 
+.nav-wrapper ul li a {
+  font-size: $header-font-size - 5pt;
+}
