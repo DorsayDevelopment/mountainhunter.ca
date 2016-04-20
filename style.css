@@ -76,10 +76,18 @@ table {
 body {
   background: #23282D; }
 
+html {
+  font-family: 'Roboto', sans-serif; }
+
 #headliner {
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center; }
+
+#headliner img {
+  width: 30vw;
+  min-width: 180px;
+  max-width: 360px; }
 
 /*# sourceMappingURL=style.css.map */
