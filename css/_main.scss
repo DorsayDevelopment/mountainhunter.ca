@@ -14,8 +14,57 @@ html {
   align-items: center;
   justify-content: center;
 }
+
 #headliner img {
   width: 30vw;
   min-width: 180px;
   max-width: 360px;
+}
+
+.product-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.product-thumbnail {
+  margin: 10px;
+  a img {
+    width: 30vw;
+    min-width: 180px;
+    max-width: 360px;
+    height: auto;
+    //clip-path: inset(10px 20px 30px 40px);
+    //-webkit-clip-path: inset(10px 20px 30px 40px);
+  }
+}
+
+.heading {
+  color: $main-text-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+
+  h3 {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: $heading-font-size;
+    position: relative;
+
+    &:before, &:after {
+      position: absolute;
+      content: '';
+      width: 30px;
+      height: 0;
+      border-bottom: 1px solid;
+      top: 50%;
+      opacity: 0.4;
+    }
+
+    &:before {left: -35px}
+    &:after {right: -35px}
+  }
 }
