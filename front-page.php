@@ -4,6 +4,30 @@
 
 <?php get_header(); ?>
 
+<div class="heading">
+  <h3>Welcome</h3>
+</div>
+
+<div class="teaser-list">
+  <div class="teaser">
+    <a href="#">
+      <span>New Products</span>
+      <img src="<?php bloginfo('template_directory'); echo '/' ?>img/forest-24.jpg" alt="">
+    </a>
+  </div>
+  <div class="teaser">
+    <a href="#">
+      <span>Join MHS</span>
+      <img src="<?php bloginfo('template_directory'); echo '/' ?>img/forest-33.jpg" alt="">
+    </a>
+  </div>
+  <div class="teaser">
+    <a href="#">
+      <span>About Us</span>
+      <img src="<?php bloginfo('template_directory'); echo '/' ?>img/mountain-49.jpg" alt="">
+    </a>
+  </div>
+</div>
 
 
 <div class="heading">
