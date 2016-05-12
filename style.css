@@ -19,6 +19,12 @@ nav {
 .nav-wrapper ul li a {
   font-size: 15pt; }
 
+.nav-fixed {
+  top: 0;
+  z-index: 100;
+  position: fixed;
+  width: 100%; }
+
 body {
   background: #23282D; }
 
