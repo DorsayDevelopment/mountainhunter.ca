@@ -1,6 +1,10 @@
+  <img id="headliner-background" src="<?php bloginfo('template_directory') ?>/img/mountain.jpg" alt="">
+
 <div id="headliner">
   <a href="#"><img src="<?php bloginfo('template_directory') ?>/img/MHS.png" alt=""></a>
 </div>
+
+
 
 <?php get_header(); ?>
 
