@@ -27,7 +27,8 @@ nav {
 
 body {
   background: #23282D;
-  position: relative; }
+  position: relative;
+  overflow-x: hidden; }
 
 html {
   font-family: 'Roboto', sans-serif; }
