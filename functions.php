@@ -27,6 +27,7 @@ add_action( 'init', 'register_menus' );
 
 add_theme_support( 'woocommerce' );
 add_theme_support( 'post-thumbnails' );
+add_theme_support( 'custom-header' );
 add_filter( 'woocommerce_product_tabs', 'wcs_woo_remove_reviews_tab', 98 );
 
 
@@ -38,3 +39,6 @@ function wc_remove_related_products($args) {
   return array();
 }
 add_filter('woocommerce_related_products_args','wc_remove_related_products', 10);
+
+
+
