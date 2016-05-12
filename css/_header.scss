@@ -21,10 +21,16 @@ nav {
         font-size: $header-font-size + 2pt;
       }
     }
-
   }
 }
 
 .nav-wrapper ul li a {
   font-size: $header-font-size - 5pt;
+}
+
+.nav-fixed {
+  top: 0;
+  z-index: 100;
+  position: fixed;
+  width: 100%;
 }
