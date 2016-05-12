@@ -36,4 +36,23 @@ html {
   min-width: 180px;
   max-width: 360px; }
 
+footer {
+  background: #147CBD; }
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .footer-logo img {
+    width: 30vw;
+    min-width: 180px;
+    max-width: 360px;
+    padding: 20px 0; }
+
+.footer-byline {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 20px; }
+
 /*# sourceMappingURL=style.css.map */

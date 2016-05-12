@@ -2,7 +2,7 @@ version: "2"
 
 services:
   web:
-    image: dorsaydevelopment/mountainhunter.ca:latest
+    image: dorsaydevelopment/mountainhunter.ca:v2
     links:
       - db
     ports:
