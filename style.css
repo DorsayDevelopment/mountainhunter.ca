@@ -100,5 +100,7 @@ footer {
   align-items: center;
   justify-content: center;
   padding-bottom: 20px; }
+  .footer-byline a {
+    color: black; }
 
 /*# sourceMappingURL=style.css.map */

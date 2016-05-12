@@ -4,6 +4,8 @@
 
 <?php get_header(); ?>
 
+
+
 <div class="heading">
   <h3>Featured</h3>
 </div>
