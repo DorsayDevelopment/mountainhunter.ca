@@ -8,7 +8,6 @@ function mountainhunter_scripts()
   wp_enqueue_script( 'jquery' );
   wp_enqueue_script( 'materialize-js' );
 
-  
   wp_enqueue_style('reset', get_template_directory_uri() . '/css/reset.css');
   wp_enqueue_style('font-awesome', get_template_directory_uri() . '/vendor/font-awesome/css/font-awesome.min.css');
   wp_enqueue_style('materialize-css', 'https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css');
@@ -16,20 +15,10 @@ function mountainhunter_scripts()
   wp_enqueue_style('roboto-font', 'https://fonts.googleapis.com/css?family=Roboto:400,300,500', false);
   wp_enqueue_style('main-css', get_template_directory_uri() . '/style.css', false);
 }
-add_action( 'wp_enqueue_scripts', 'mountainhunter_scripts' );
-
 
 function register_menus() {
   register_nav_menu('header-main-menu',__( 'Header Main Menu' ));
 }
-add_action( 'init', 'register_menus' );
-
-
-add_theme_support( 'woocommerce' );
-add_theme_support( 'post-thumbnails' );
-add_theme_support( 'custom-header' );
-add_filter( 'woocommerce_product_tabs', 'wcs_woo_remove_reviews_tab', 98 );
-
 
 function wcs_woo_remove_reviews_tab($tabs) {
   unset($tabs['reviews']);
@@ -38,7 +27,18 @@ function wcs_woo_remove_reviews_tab($tabs) {
 function wc_remove_related_products($args) {
   return array();
 }
-add_filter('woocommerce_related_products_args','wc_remove_related_products', 10);
 
+function remove_woocommerce_breadcrumbs() {
+  remove_action( 'woocommerce_before_main_content', 'woocommerce_breadcrumb', 20, 0 );
+}
+
+add_action( 'wp_enqueue_scripts', 'mountainhunter_scripts' );
+add_action( 'init', 'remove_woocommerce_breadcrumbs' );
+add_theme_support( 'woocommerce' );
+add_theme_support( 'post-thumbnails' );
+add_theme_support( 'custom-header' );
+add_filter( 'woocommerce_product_tabs', 'wcs_woo_remove_reviews_tab', 98 );
+add_filter('woocommerce_related_products_args','wc_remove_related_products', 10);
+add_action( 'init', 'register_menus' );
 
 
