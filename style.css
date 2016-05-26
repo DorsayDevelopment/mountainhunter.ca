@@ -33,6 +33,11 @@ body {
 html {
   font-family: 'Roboto', sans-serif; }
 
+.page-container {
+  width: 1500px;
+  margin: 0 auto;
+  position: relative; }
+
 #headliner {
   height: 100vh;
   display: flex;
@@ -78,7 +83,7 @@ html {
     z-index: 90; }
   .teaser a span {
     color: white;
-    font-size: 15pt;
+    font-size: 20pt;
     font-weight: 400;
     position: absolute;
     top: 20%;
@@ -101,11 +106,18 @@ html {
 
 .product-thumbnail {
   margin: 10px; }
-  .product-thumbnail a img {
+  .product-thumbnail.front-page a img {
     width: 30vw;
     min-width: 180px;
     max-width: 360px;
     height: auto; }
+  .product-thumbnail.product-page a img {
+    width: 30vw;
+    min-width: 180px;
+    max-width: 300px;
+    height: auto; }
+  .product-thumbnail.product-page h3 {
+    font-size: 18pt; }
 
 .heading {
   color: white;
@@ -116,7 +128,7 @@ html {
   .heading h3 {
     display: inline-block;
     text-transform: uppercase;
-    font-size: 15pt;
+    font-size: 20pt;
     position: relative; }
     .heading h3:before, .heading h3:after {
       position: absolute;
@@ -153,5 +165,12 @@ footer {
   padding-bottom: 20px; }
   .footer-byline a {
     color: black; }
+
+.woocommerce-result-count {
+  color: #bfbfbf;
+  text-align: center; }
+
+.onsale {
+  display: none; }
 
 /*# sourceMappingURL=style.css.map */

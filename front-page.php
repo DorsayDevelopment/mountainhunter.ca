@@ -44,7 +44,7 @@
   $loop = new WP_Query($args);
   while ( $loop->have_posts() ) : $loop->the_post(); ?>
 
-    <div class="product-thumbnail">
+    <div class="product-thumbnail front-page">
       <a href="<?php echo get_permalink( $loop->post->ID ) ?>">
         <?php
         if(has_post_thumbnail()) {

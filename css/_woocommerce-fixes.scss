@@ -1,0 +1,10 @@
+@import 'variables';
+
+.woocommerce-result-count {
+  color: darken($main-text-color, 25);
+  text-align: center;
+}
+
+.onsale {
+  display: none;
+}
