@@ -34,7 +34,8 @@ html {
   font-family: 'Roboto', sans-serif; }
 
 .page-container {
-  width: 1500px;
+  padding: 50px;
+  max-width: 1500px;
   margin: 0 auto;
   position: relative; }
 
@@ -142,6 +143,12 @@ html {
       left: -35px; }
     .heading h3:after {
       right: -35px; }
+
+.woocommerce-pagination {
+  width: 50vw;
+  margin: auto; }
+  .woocommerce-pagination ul.page-numbers {
+    float: none; }
 
 footer {
   background: #147CBD;
