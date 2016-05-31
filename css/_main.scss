@@ -11,7 +11,8 @@ html {
 }
 
 .page-container {
-  width: 1500px;
+  padding: 50px;
+  max-width: 1500px;
   margin: 0 auto;
   position: relative;
 }
@@ -149,5 +150,14 @@ html {
 
     &:before {left: -35px}
     &:after {right: -35px}
+  }
+}
+
+.woocommerce-pagination {
+  width: 50vw;
+  margin: auto;
+
+  ul.page-numbers {
+    float: none;
   }
 }

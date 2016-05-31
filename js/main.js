@@ -4,14 +4,16 @@ $j(document).ready(function() {
     $j('.button-collapse').sideNav();
 
 
-    var navTop = $j('nav').offset().top;
+    var navTop = $j('#main-nav').offset().top;
 
     $j(window).scroll(function () {
         if ($j(window).scrollTop() > navTop) {
-            $j('nav').addClass('nav-fixed');
+            $j('#main-nav').addClass('nav-fixed');
+            $j('body').css("margin-top", "64px");
         }
         if ($j(window).scrollTop() < navTop) {
-            $j('nav').removeClass('nav-fixed');
+            $j('#main-nav').removeClass('nav-fixed');
+            $j('body').css("margin-top", "0px");
         }
     });
     
