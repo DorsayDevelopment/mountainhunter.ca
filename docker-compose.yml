@@ -4,11 +4,11 @@ services:
   web:
     image: dorsaydevelopment/mountainhunter.ca:staging
     links:
-      - db
+      - db:mysql
     ports:
       - 80:80
     volumes:
-      - /data/mountainhunter/db/:/data/mountainhunter
+      - /data/mountainhunter/wp-content/:/var/www/html/wp-content
     environment:
       - WORDPRESS_DB_HOST=db
       - WORDPRESS_DB_PASSWORD=mtnhunter1
