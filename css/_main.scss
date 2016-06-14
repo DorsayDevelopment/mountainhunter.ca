@@ -15,6 +15,12 @@ html {
   max-width: 1500px;
   margin: 0 auto;
   position: relative;
+  color: white;
+
+  & > .images, & > .summary.entry-summary {
+    width: 50%;
+    margin: auto;
+  }
 }
 
 #headliner {
@@ -121,8 +127,6 @@ html {
       font-size: 18pt;
     }
   }
-
-
 }
 
 .heading {
@@ -160,4 +164,21 @@ html {
   ul.page-numbers {
     float: none;
   }
+}
+
+#content {
+  & > div {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  & > .woocommerce-message {
+    color: white;
+    text-align: center;
+    background: #000;
+  }
+}
+
+.cart > .quantity {
+  width: 100px;
 }

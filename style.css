@@ -37,7 +37,11 @@ html {
   padding: 50px;
   max-width: 1500px;
   margin: 0 auto;
-  position: relative; }
+  position: relative;
+  color: white; }
+  .page-container > .images, .page-container > .summary.entry-summary {
+    width: 50%;
+    margin: auto; }
 
 #headliner {
   height: 100vh;
@@ -149,6 +153,18 @@ html {
   margin: auto; }
   .woocommerce-pagination ul.page-numbers {
     float: none; }
+
+#content > div {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap; }
+#content > .woocommerce-message {
+  color: white;
+  text-align: center;
+  background: #000; }
+
+.cart > .quantity {
+  width: 100px; }
 
 footer {
   background: #147CBD;
