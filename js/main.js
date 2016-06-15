@@ -3,7 +3,6 @@ $j=jQuery.noConflict();
 $j(document).ready(function() {
     $j('.button-collapse').sideNav();
 
-
     var navTop = $j('#main-nav').offset().top;
 
     $j(window).scroll(function () {
