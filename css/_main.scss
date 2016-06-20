@@ -182,3 +182,27 @@ html {
 .cart > .quantity {
   width: 100px;
 }
+
+.post-list-post {
+  display: block;
+  text-decoration: none;
+  color: $main-text-color;
+  margin: 0;
+  padding: 10px;
+
+  &:hover {
+    background-color: darken($main-color-1, 2);
+  }
+
+  h3 {
+    margin: 0 10px;
+  }
+  p {
+    margin: 0 15px;
+    color: darken($main-text-color, 10);
+  }
+}
+
+input[type=submit].submit {
+  color: black;
+}

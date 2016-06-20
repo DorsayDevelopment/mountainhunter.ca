@@ -2,7 +2,8 @@ version: "2"
 
 services:
   web:
-    image: dorsaydevelopment/mountainhunter.ca:staging
+#    image: dorsaydevelopment/mountainhunter.ca:staging
+    build: .
     links:
       - db:mysql
     ports:
